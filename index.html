@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <title>Java Documentation</title>
+</head>
+<body>
+  <nav id="navbar">
+    <header>Java Documentation</header>
+    <ul>
+        <li><a class="nav-link" href="#Getting_started_with_Java">Getting started with Java</a></li>
+        <li><a class="nav-link" href="#Java_Entry_Point">Java Entry Point</a></li>
+        <li><a class="nav-link" href="#Printing_to_the_Console">Printing to the Console</a></li>
+        <li><a class="nav-link" href="#Declaring_Functions">Declaring Functions</a></li>
+        <li><a class="nav-link" href="#Object_Oriented_Programming">Object Oriented Programming</a></li>
+    </ul>
+    </a>
+  </nav>
+
+  <main id="main-doc">
+    <section class="main-section" id="Getting_started_with_Java">
+        <header>Getting started with Java</header>
+        <p>Steps in getting getting started</p>
+        <ol>
+            <li>Download Java </li>
+            <li>Download Java SDK</li>
+            <li>Get an Integrated Developement Environment (IDE)</li>
+            <li>Start a Project within the IDE</li>
+            <li>Code up "Hello World" and run the code</li>
+        </ol>
+    </section>
+
+
+    <section class="main-section" id="Java_Entry_Point">
+        <header>Java Entry Point</header>
+        <p>The entry point to a java application is the main function.
+        </p>
+        <p>It is categorized by its (String[] arg) as a parameter to the function</p>
+
+        <pre>
+            <code>
+                public class  MyMainFunction {
+                    /* Java main function example */
+                    public static void main(String[] args){
+
+                    }
+                }
+            </code>
+        </pre>
+        <p>
+            As you can see the main function is wrapped within a class which is part of the object oriented structure of Java projects.
+        </p>
+
+        <p>The name of the project is therefore "MymainFunction"</p>
+    </section>
+
+
+    <section class="main-section" id="Printing_to_the_Console" >
+        <header>Printing to the Console</header>
+        <p>In order to print to the Console. We use system.out.println.</p>
+        <p>
+            I know, it is very long, but this is the way it's done.
+        </p>
+        <pre>
+            <code>
+                public class  MyMainFunction {
+                    /* Java main function example */
+                    public static void main(String[] args){
+                        system.out.println("Hello World");
+                     }
+                }
+            </code>
+        </pre>
+        <p>
+            In this example we are printing out "hello World" to the console when we run the program. 
+        </p>
+    </section>
+
+
+    <section class="main-section" id="Declaring_Functions">
+        <header>Declaring Functions</header>
+        <p>
+            Functions are actually called methods in Java. Here is an example of how to declare a java method. 
+        </p>
+
+        <img src="https://techvidvan.com/tutorials/wp-content/uploads/sites/2/2020/02/example-of-java-method-declaration.jpg" 
+        alt="java-method-img" class="image" />
+
+        <pre>
+            <code>
+                Public static void myFunction(String name, int age )
+                {
+                    //function code
+                }
+            </code>
+        </pre>
+    </section>
+
+
+    <section class="main-section" id="Object_Oriented_Programming">
+        <header>Object Oriented Programming</header>
+        <p>
+            Java is know as an Object Oriented Programming Language.
+        </p>
+        <p>
+            This means that it is easy to represent entities as objects by using classes and encapsulation.
+        </p>
+        <p>
+            An example of this might be a student class to represent a student
+        </p>
+
+        <pre>
+            <code>
+                public class Student {
+
+                    /* Student properties */
+                    private String name;
+                    private int age;
+                  
+                    /* Constructor /*
+                    public Student(String name, int age) {
+                      this.name = name;
+                      this.age = age;
+                    }
+                  
+                    /* Getter method */
+                    public String getName() {
+                      return name;
+                    }
+                  
+                    /* Setter Method */
+                    public void setName(String name) {
+                      this.name = name;
+                    }
+                    }
+            </code>
+
+            <p>We use this class by doing the following: </p>
+
+            <pre>
+            <code>
+                Student student1 = new Student("Rohan", 19);
+                String RohanName = student1.getName();
+                student1.setName("Prathmesh");
+                String Prathmeshname = student1.getName();
+            </code>    
+            </pre>
+
+
+        </pre>
+
+
+    </section>
+    <footer>
+    <p>Documentation brought to you by Rohan Shinde</p>
+</footer>
+  </main>
+</body>
+</html>
